@@ -1,0 +1,422 @@
+11:07:29.485 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : null 
+11:07:29.753 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+11:07:36.281 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 6525.62
+1 < 200
+1 < Age: 5622
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 6bc575c368c37708-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 12 Dec 2021 08:07:36 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=N7P00Fc4cktFs6YI9S3Qp38G30QymVmd0hY6Hns579FcTHZWWVvumqK8OO%2BOpEvqewgnNbge4vkSHqjxTQ%2B%2BtWvDAm8EHRpG59PHR7AiDpT1Rm0YwxiWH0AEC40%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < access-control-allow-origin: *
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+11:07:36.335 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 6 of 22: classpath:features/callFeature/userDetail1.feature
+11:07:36.391 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Environment variable is : null 
+11:07:36.402 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+11:07:36.405 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 18 of 22: classpath:features/authentication/generateAccessToken.feature
+11:08:48.821 [main] INFO  com.intuit.karate - found scenario at line: 4 - ^using karate\-config$
+11:08:49.018 [main] INFO  com.intuit.karate - Environment variable is : null 
+11:08:49.024 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+11:08:49.127 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+11:08:49.129 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+11:08:49.136 [main] INFO  com.intuit.karate - [print] https://www.kloia.com/
+11:08:49.137 [main] INFO  com.intuit.karate - [print] busra
+11:08:49.141 [main] INFO  com.intuit.karate - [print] authInfo ---> {
+  "__arg": null,
+  "accessToken": "bla bla bla",
+  "__loop": -1,
+  "response": {
+    "access_token": "bla bla bla"
+  }
+}
+
+11:11:04.136 [main] INFO  com.intuit.karate - found scenario at line: 3 - ^using karate\-config$
+11:11:04.270 [main] INFO  com.intuit.karate - Environment variable is : null 
+11:11:04.272 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+11:11:04.352 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+11:11:04.357 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+11:11:04.377 [main] INFO  com.intuit.karate - [print] authInfo ---> {
+  "__arg": null,
+  "accessToken": "bla bla bla",
+  "__loop": -1,
+  "response": {
+    "access_token": "bla bla bla"
+  }
+}
+
+11:12:45.772 [main] INFO  com.intuit.karate - found scenario at line: 3 - ^using karate\-config$
+11:12:45.900 [main] INFO  com.intuit.karate - Environment variable is : null 
+11:12:45.901 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+11:12:45.977 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+11:12:45.979 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+11:12:45.996 [main] INFO  com.intuit.karate - [print] authInfo ---> {
+  "__arg": null,
+  "accessToken": "bla bla bla",
+  "__loop": -1,
+  "response": {
+    "access_token": "bla bla bla"
+  }
+}
+
+11:12:46.005 [main] INFO  com.intuit.karate - [print] accessToken ---> 
+11:13:25.010 [main] INFO  com.intuit.karate - found scenario at line: 3 - ^using karate\-config$
+11:13:25.150 [main] INFO  com.intuit.karate - Environment variable is : null 
+11:13:25.152 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+11:13:25.250 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+11:13:25.252 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+11:13:25.266 [main] INFO  com.intuit.karate - [print] authInfo ---> {
+  "__arg": null,
+  "accessToken": "bla bla bla",
+  "__loop": -1,
+  "response": {
+    "access_token": "bla bla bla"
+  }
+}
+
+11:13:25.277 [main] INFO  com.intuit.karate - [print] accessToken ---> bla bla bla
+11:17:23.953 [main] INFO  com.intuit.karate - found scenario at line: 3 - ^using karate\-config$
+11:17:24.096 [main] INFO  com.intuit.karate - Environment variable is : null 
+11:17:24.098 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+11:17:24.195 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+11:17:24.197 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+11:17:24.216 [main] INFO  com.intuit.karate - [print] authInfo ---> {
+  "__arg": null,
+  "accessToken": "bla bla bla",
+  "__loop": -1,
+  "response": {
+    "access_token": "bla bla bla"
+  }
+}
+
+11:17:24.226 [main] INFO  com.intuit.karate - [print] accessToken ---> bla bla bla
+11:17:24.229 [main] INFO  com.intuit.karate - [print] auth ---> {
+  "accessToken": "bla bla bla"
+}
+
+11:31:39.016 [main] INFO  com.intuit.karate - found scenario at line: 76 - ^call function two parameters$
+11:31:39.177 [main] INFO  com.intuit.karate - Environment variable is : null 
+11:31:39.179 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+11:31:39.259 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+11:31:39.261 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+11:31:39.290 [main] INFO  com.intuit.karate - [print] 3.0
+14:06:47.953 [main] INFO  com.intuit.karate - found scenario at line: 8 - ^call$
+14:06:51.638 [main] INFO  com.intuit.karate - Environment variable is : null 
+14:06:51.640 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+14:06:51.705 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+14:06:51.708 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+14:06:51.720 [main] INFO  com.intuit.karate - [print] second scenario
+14:06:51.729 [main] INFO  com.intuit.karate - scenario called at line: 4 by tag: @tag1
+14:06:51.735 [main] INFO  com.intuit.karate - [print] first scenario
+14:08:44.353 [main] INFO  com.intuit.karate - found scenario at line: 8 - ^call$
+14:08:49.909 [main] INFO  com.intuit.karate - Environment variable is : null 
+14:08:49.916 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+14:08:50.032 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+14:08:50.033 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+14:08:50.045 [main] INFO  com.intuit.karate - [print] second scenario
+14:08:50.054 [main] INFO  com.intuit.karate - scenario called at line: 4 by tag: @tag1
+14:08:50.059 [main] INFO  com.intuit.karate - [print] first scenario
+14:09:10.233 [main] INFO  com.intuit.karate - found scenario at line: 4 - ^call 1$
+14:09:10.799 [main] INFO  com.intuit.karate - Environment variable is : null 
+14:09:10.801 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+14:09:10.863 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+14:09:10.865 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+14:09:10.876 [main] INFO  com.intuit.karate - [print] first scenario
+14:10:39.976 [main] INFO  com.intuit.karate - found scenario at line: 8 - ^call$
+14:10:45.347 [main] INFO  com.intuit.karate - Environment variable is : null 
+14:10:45.349 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+14:10:45.409 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+14:10:45.411 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+14:10:45.425 [main] INFO  com.intuit.karate - [print] second scenario
+14:10:45.435 [main] INFO  com.intuit.karate - scenario called at line: 4 by tag: @tag1
+14:10:45.439 [main] INFO  com.intuit.karate - [print] first scenario
+14:12:44.151 [main] INFO  com.intuit.karate - found scenario at line: 8 - ^call$
+14:12:44.848 [main] INFO  com.intuit.karate - Environment variable is : null 
+14:12:44.849 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+14:12:44.913 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+14:12:44.915 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+14:12:44.927 [main] INFO  com.intuit.karate - [print] second scenario
+14:12:44.936 [main] INFO  com.intuit.karate - scenario called at line: 4 by tag: @tag1
+14:12:44.942 [main] INFO  com.intuit.karate - [print] first scenario
+14:13:24.898 [main] INFO  com.intuit.karate - found scenario at line: 8 - ^call 4$
+14:13:30.245 [main] INFO  com.intuit.karate - Environment variable is : null 
+14:13:30.247 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+14:13:30.307 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+14:13:30.309 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+14:13:30.319 [main] INFO  com.intuit.karate - [print] fouth scenario
+14:13:30.327 [main] INFO  com.intuit.karate - scenario called at line: 4 by tag: @tag1
+14:13:30.332 [main] INFO  com.intuit.karate - [print] first scenario
+19:52:12.123 [main] INFO  com.intuit.karate - found scenario at line: 3 - ^conditional logic$
+19:52:17.470 [main] INFO  com.intuit.karate - Environment variable is : null 
+19:52:17.472 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+19:52:17.538 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+19:52:17.541 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+19:52:17.555 [main] INFO  com.intuit.karate - [print] filename ---->  sample1.feature
+19:53:22.100 [main] INFO  com.intuit.karate - found scenario at line: 7 - ^conditional logic not equals$
+19:53:27.521 [main] INFO  com.intuit.karate - Environment variable is : null 
+19:53:27.523 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+19:53:27.611 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+19:53:27.613 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+19:53:27.632 [main] INFO  com.intuit.karate - [print] filename ---->  sample2.feature
+19:54:36.392 [main] INFO  com.intuit.karate - found scenario at line: 7 - ^conditional logic not equals$
+19:54:41.781 [main] INFO  com.intuit.karate - Environment variable is : null 
+19:54:41.783 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+19:54:41.844 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+19:54:41.846 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+19:54:41.858 [main] INFO  com.intuit.karate - [print] filename ---->  sample2.feature
+19:54:41.868 [main] INFO  com.intuit.karate - [print] https://www.kloia.com/
+19:54:41.869 [main] INFO  com.intuit.karate - [print] busra
+20:03:43.056 [main] INFO  com.intuit.karate - found scenario at line: 21 - ^conditional logic if condition$
+20:03:48.481 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:03:48.483 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:03:48.547 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:03:48.549 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:03:48.790 [main] DEBUG com.intuit.karate - request:
+1 > GET https://some-host.in/api/users/2/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: some-host.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+20:03:48.892 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 102 milliseconds for URL: https://some-host.in/api/users/2/users/2
+20:03:48.893 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:03:48.893 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
+arg: null
+sample1.feature:8 - 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:04:20.672 [main] INFO  com.intuit.karate - found scenario at line: 13 - ^conditional logic response code$
+20:04:21.344 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:04:21.346 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:04:21.414 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:04:21.416 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:04:21.719 [main] DEBUG com.intuit.karate - request:
+1 > GET https://some-host.in/api/users/2/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: some-host.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+20:04:21.736 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 16 milliseconds for URL: https://some-host.in/api/users/2/users/2
+20:04:21.736 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:04:21.737 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
+arg: null
+sample1.feature:8 - 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:04:46.659 [main] INFO  com.intuit.karate - found scenario at line: 13 - ^conditional logic response code$
+20:04:52.021 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:04:52.023 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:04:52.081 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:04:52.083 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:04:52.101 [main] INFO  com.intuit.karate - [print] result --->  {
+}
+
+20:04:58.848 [main] INFO  com.intuit.karate - found scenario at line: 21 - ^conditional logic if condition$
+20:04:59.372 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:04:59.375 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:04:59.437 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:04:59.439 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:04:59.720 [main] DEBUG com.intuit.karate - request:
+1 > GET https://some-host.in/api/users/2/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: some-host.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+20:04:59.733 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 13 milliseconds for URL: https://some-host.in/api/users/2/users/2
+20:04:59.734 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:04:59.734 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
+arg: null
+sample1.feature:8 - 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:06:30.151 [main] INFO  com.intuit.karate - found scenario at line: 24 - ^conditional logic if condition$
+20:06:33.640 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:06:33.641 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:06:33.702 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:06:33.704 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:06:33.930 [main] DEBUG com.intuit.karate - request:
+1 > GET https://some-host.in/api/users/2/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: some-host.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+20:06:33.942 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 12 milliseconds for URL: https://some-host.in/api/users/2/users/2
+20:06:33.943 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:06:33.943 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
+arg: null
+sample1.feature:8 - 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:07:45.652 [main] INFO  com.intuit.karate - found scenario at line: 24 - ^conditional logic if condition$
+20:07:51.047 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:07:51.049 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:07:51.109 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:07:51.111 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:07:51.344 [main] DEBUG com.intuit.karate - request:
+1 > GET https://some-host.in/api/users/2/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: some-host.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+20:07:51.354 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 10 milliseconds for URL: https://some-host.in/api/users/2/users/2
+20:07:51.355 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:07:51.355 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
+arg: null
+sample1.feature:8 - 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:08:26.131 [main] INFO  com.intuit.karate - found scenario at line: 16 - ^conditional logic response code$
+20:08:26.665 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:08:26.667 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:08:26.795 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:08:26.797 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:08:27.087 [main] DEBUG com.intuit.karate - request:
+1 > GET https://some-host.in/api/users/2/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: some-host.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+20:08:27.104 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 16 milliseconds for URL: https://some-host.in/api/users/2/users/2
+20:08:27.104 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:08:27.104 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
+arg: null
+sample1.feature:8 - 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:11:45.497 [main] INFO  com.intuit.karate - found scenario at line: 24 - ^conditional logic if condition$
+20:11:50.968 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:11:50.970 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:11:51.031 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:11:51.032 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:11:51.256 [main] DEBUG com.intuit.karate - request:
+1 > GET https://some-host.in/api/users/2/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: some-host.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+20:11:51.267 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 11 milliseconds for URL: https://some-host.in/api/users/2/users/2
+20:11:51.267 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:11:51.268 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
+arg: null
+sample1.feature:8 - 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:12:08.424 [main] INFO  com.intuit.karate - found scenario at line: 24 - ^conditional logic if condition$
+20:12:09.006 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:12:09.007 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:12:09.072 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:12:09.074 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:12:09.098 [main] INFO  com.intuit.karate - [print] https://www.kloia.com/
+20:12:09.098 [main] INFO  com.intuit.karate - [print] busra
+20:12:31.302 [main] INFO  com.intuit.karate - found scenario at line: 6 - ^basic get call$
+20:12:31.776 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:12:31.778 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:12:31.856 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:12:31.858 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:12:32.130 [main] DEBUG com.intuit.karate - request:
+1 > GET https://some-host.in/api/users/2/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: some-host.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+20:12:32.146 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 16 milliseconds for URL: https://some-host.in/api/users/2/users/2
+20:12:32.146 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:13:28.266 [main] INFO  com.intuit.karate - found scenario at line: 6 - ^basic get call$
+20:13:33.619 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:13:33.620 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:13:33.682 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:13:33.684 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:13:33.902 [main] DEBUG com.intuit.karate - request:
+1 > GET https://some-host.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: some-host.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+20:13:33.916 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 13 milliseconds for URL: https://some-host.in/api/users/2
+20:13:33.916 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:14:24.892 [main] INFO  com.intuit.karate - found scenario at line: 7 - ^basic get call$
+20:14:25.433 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:14:25.435 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:14:25.501 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:14:25.503 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:14:25.778 [main] DEBUG com.intuit.karate - request:
+1 > GET https://some-host.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: some-host.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+20:14:25.792 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 13 milliseconds for URL: https://some-host.in/api/users/2
+20:14:25.793 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
+20:15:24.899 [main] INFO  com.intuit.karate - found scenario at line: 6 - ^basic get call$
+20:15:25.370 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:15:25.372 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:15:25.450 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:15:25.452 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:15:25.715 [main] DEBUG com.intuit.karate - request:
+1 > GET https://regres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: regres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+20:15:27.064 [main] DEBUG com.intuit.karate - response time in milliseconds: 1346.16
+1 < 403
+1 < Cache-Control: no-cache
+1 < Connection: close
+1 < Content-Type: text/html
+<html><body><h1>403 Forbidden</h1>
+Request forbidden by administrative rules.
+</body></html>
+
+
+
+20:15:27.102 [main] ERROR com.intuit.karate - status code was: 403, expected: 200, response time: 1346, url: https://regres.in/api/users/2, response: <html>
+<body>
+<h1>403 Forbidden</h1>
+Request forbidden by administrative rules.
+</body>
+</html>
+
+20:16:38.648 [main] INFO  com.intuit.karate - found scenario at line: 24 - ^conditional logic if condition$
+20:16:44.004 [main] INFO  com.intuit.karate - Environment variable is : null 
+20:16:44.006 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:16:44.065 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+20:16:44.067 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:16:44.092 [main] INFO  com.intuit.karate - [print] sample 2
+13:36:34.933 [main] INFO  com.intuit.karate - found scenario at line: 13 - ^conditional logic$
+13:36:35.632 [main] INFO  com.intuit.karate - Environment variable is : null 
+13:36:35.634 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+13:36:35.701 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
+13:36:35.703 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+13:36:35.720 [main] INFO  com.intuit.karate - [print] filename ---->  sample1.feature
+13:36:35.737 [main] INFO  com.intuit.karate - [print] sample 1
+13:36:35.763 [main] INFO  com.intuit.karate - {featureDir=/Users/busra.ozdemir/Movies/karateFrameworkDetailLessons/src/test/resources/features/conditionalLogic, scenarioType=Scenario, featureFileName=conditionalLogic.feature, errorMessage=null, scenarioDescription=, scenarioName=conditional logic} 

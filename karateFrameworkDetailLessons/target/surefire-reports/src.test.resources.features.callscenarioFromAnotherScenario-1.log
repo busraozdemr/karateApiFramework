@@ -1,0 +1,5 @@
+14:09:10.237 found scenario at line: 4 - ^call 1$
+14:09:10.799 Environment variable is : null 
+14:09:10.801 >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+14:09:10.865 << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+14:09:10.876 [print] first scenario

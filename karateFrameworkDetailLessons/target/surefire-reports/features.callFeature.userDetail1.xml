@@ -1,0 +1,9 @@
+<testsuite failures="0" name="features/callFeature/userDetail1.feature" skipped="0" tests="1" time="6.757193">
+  <testcase classname="features.callFeature.userDetail1" name="basic get call 2" time="6.757193">
+    <system-out>* def expectedOutput = read('../../json/all.json') ........................ passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+And method GET ............................................................ passed
+Then status 200 ........................................................... passed
+And match response == expectedOutput[0] ................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,8 @@
+<testsuite failures="0" name="features/authentication/generateAccessToken.feature" skipped="0" tests="1" time="0.010035">
+  <testcase classname="features.authentication.generateAccessToken" name="authentication with params" time="0.010035">
+    <system-out>* url 'https://reqres.in/api/' ............................................ passed
+* def response = {access_token : "bla bla bla"} ........................... passed
+* def accessToken = response.access_token ................................. passed
+Then print 'accessToken ---&gt; ', accessToken ............................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,8 @@
+20:08:26.134 found scenario at line: 16 - ^conditional logic response code$
+20:08:26.665 Environment variable is : null 
+20:08:26.667 >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:08:26.797 << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:08:27.104 feature call failed: sample1.feature
+arg: null
+sample1.feature:8 - 
+java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
