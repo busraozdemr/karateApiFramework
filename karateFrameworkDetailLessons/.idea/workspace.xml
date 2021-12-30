@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="79250309-4b15-4e41-9725-fc54f15fa844" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,19 +20,12 @@
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="21bXhIa2odZdKf5wJwIhGvpQHuG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -38,6 +34,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.last.introduce.type" value="VAR" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/conditionalLogic" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -54,29 +54,10 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: conditional logic">
+  <component name="RunManager" selected="JUnit.TestRunner.testParallel">
     <configuration name="Scenario: basic get call (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/basicGetCall.feature" />
-      <option name="GLUE" value="com.intuit.karate" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="karateFrameworkDetailLessons" />
-      <option name="NAME_FILTER" value="^basic get call$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^basic get call$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: basic get call" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: basic get call" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/conditionalLogic/sample1.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="karateFrameworkDetailLessons" />
@@ -150,20 +131,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner.testParallel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="karateFrameworkDetailLessons" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner" />
+      <option name="METHOD_NAME" value="testParallel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Cucumber java.Scenario: conditional logic if condition" />
-      <item itemvalue="Cucumber java.Scenario: conditional logic response code" />
-      <item itemvalue="Cucumber java.Scenario: basic get call" />
-      <item itemvalue="Cucumber java.Scenario: basic get call (1)" />
-      <item itemvalue="Cucumber java.Scenario: conditional logic" />
+      <item itemvalue="Cucumber Java.Scenario: basic get call (1)" />
+      <item itemvalue="Cucumber Java.Scenario: conditional logic" />
+      <item itemvalue="Cucumber Java.Scenario: conditional logic if condition" />
+      <item itemvalue="Cucumber Java.Scenario: conditional logic response code" />
+      <item itemvalue="JUnit.TestRunner.testParallel" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: conditional logic" />
-        <item itemvalue="Cucumber java.Scenario: conditional logic if condition" />
-        <item itemvalue="Cucumber java.Scenario: basic get call" />
-        <item itemvalue="Cucumber java.Scenario: basic get call (1)" />
-        <item itemvalue="Cucumber java.Scenario: conditional logic response code" />
+        <item itemvalue="JUnit.TestRunner.testParallel" />
       </list>
     </recent_temporary>
   </component>
@@ -184,62 +171,5 @@
       <workItem from="1638888744491" duration="14557000" />
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="0" y="326" key="#Inspections" timestamp="1638892438419">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state x="0" y="326" key="#Inspections/0.23.1680.972@0.23.1680.972" timestamp="1638892438419" />
-    <state x="356" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638463700759">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state x="356" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.972@0.23.1680.972" timestamp="1638463700759" />
-    <state x="551" y="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1638890942988">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state x="551" y="398" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.972@0.23.1680.972" timestamp="1638890942988" />
-    <state width="1363" height="323" key="GridCell.Tab.0.bottom" timestamp="1639391793566">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state width="1363" height="323" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1639391793566" />
-    <state width="1363" height="323" key="GridCell.Tab.0.center" timestamp="1639391793565">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state width="1363" height="323" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1639391793565" />
-    <state width="1363" height="323" key="GridCell.Tab.0.left" timestamp="1639391793565">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state width="1363" height="323" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1639391793565" />
-    <state width="1363" height="323" key="GridCell.Tab.0.right" timestamp="1639391793566">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state width="1363" height="323" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1639391793566" />
-    <state width="1363" height="412" key="GridCell.Tab.1.bottom" timestamp="1639307349153">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state width="1363" height="412" key="GridCell.Tab.1.bottom/0.23.1680.972@0.23.1680.972" timestamp="1639307349153" />
-    <state width="1363" height="412" key="GridCell.Tab.1.center" timestamp="1639307349152">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state width="1363" height="412" key="GridCell.Tab.1.center/0.23.1680.972@0.23.1680.972" timestamp="1639307349152" />
-    <state width="1363" height="412" key="GridCell.Tab.1.left" timestamp="1639307349152">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state width="1363" height="412" key="GridCell.Tab.1.left/0.23.1680.972@0.23.1680.972" timestamp="1639307349152" />
-    <state width="1363" height="412" key="GridCell.Tab.1.right" timestamp="1639307349153">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state width="1363" height="412" key="GridCell.Tab.1.right/0.23.1680.972@0.23.1680.972" timestamp="1639307349153" />
-    <state x="568" y="288" key="com.intellij.ide.util.TipDialog" timestamp="1638887922416">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state x="568" y="288" key="com.intellij.ide.util.TipDialog/0.23.1680.972@0.23.1680.972" timestamp="1638887922416" />
-    <state x="661" y="231" key="run.anything.popup" timestamp="1638887004565">
-      <screen x="0" y="23" width="1680" height="972" />
-    </state>
-    <state x="661" y="231" key="run.anything.popup/0.23.1680.972@0.23.1680.972" timestamp="1638887004565" />
   </component>
 </project>

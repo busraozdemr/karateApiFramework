@@ -49,28 +49,28 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@parallel=false", ] ,
+        labels:  [ "@parallel=false",  "@tag2", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00, ]             },
+                data:  [ 100.00,  100.00, ]             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00, ]             },
+                data:  [ 0.00,  0.00, ]             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00, ]             },
+                data:  [ 0.00,  0.00, ]             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00, ]             },
+                data:  [ 0.00,  0.00, ]             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00, ]             }
+                data:  [ 0.00,  0.00, ]             }
         ]
     };
 
@@ -128,8 +128,8 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>demo</td>
-            <td>12 Dec 2021, 11:07</td>
+      <td>karate lessons</td>
+            <td>30 Dec 2021, 11:23</td>
     </tr>
   </tbody>
 </table>
@@ -204,26 +204,43 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="6753596946">6s 753ms</td>
+        <td class="duration" data-value="808827875">808ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_tag2.html">@tag2</a></td>
+        
+        <td      class="passed"    >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="109804000">109ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>1</td>
-            <td>4</td>
+      <td>2</td>
+            <td>12</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
+      <td>12</td>
 
-      <td>1</td>
+      <td>3</td>
       <td>0</td>
-      <td>1</td>
+      <td>3</td>
 
-      <td class="duration">6s 753ms</td>
+      <td class="duration">918ms</td>
       <td></td>
     </tr>
     <tr>

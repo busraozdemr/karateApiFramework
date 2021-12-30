@@ -1,5 +1,0 @@
-19:54:36.395 found scenario at line: 7 - ^conditional logic not equals$
-19:54:41.782 Environment variable is : null 
-19:54:41.784 >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-19:54:41.846 << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-19:54:41.859 [print] filename ---->  sample2.feature

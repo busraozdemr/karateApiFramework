@@ -1,422 +1,1306 @@
-11:07:29.485 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : null 
-11:07:29.753 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+11:14:27.734 [main] INFO  com.intuit.karate.Runner - karate.env is: 'demo'
+11:14:28.588 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:14:28.613 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+11:14:29.787 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+11:14:29.792 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+11:14:29.922 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+11:14:29.925 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+11:14:30.327 [pool-2-thread-1] DEBUG com.intuit.karate - request:
 1 > GET https://reqres.in/api/users/2
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
 1 > Host: reqres.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
 
-11:07:36.281 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 6525.62
+
+11:14:30.674 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 337
 1 < 200
-1 < Age: 5622
-1 < CF-Cache-Status: HIT
-1 < CF-RAY: 6bc575c368c37708-LHR
-1 < Cache-Control: max-age=14400
-1 < Connection: keep-alive
+1 < Date: Wed, 29 Dec 2021 08:14:30 GMT
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 12 Dec 2021 08:07:36 GMT
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=N7P00Fc4cktFs6YI9S3Qp38G30QymVmd0hY6Hns579FcTHZWWVvumqK8OO%2BOpEvqewgnNbge4vkSHqjxTQ%2B%2BtWvDAm8EHRpG59PHR7AiDpT1Rm0YwxiWH0AEC40%3D"}],"group":"cf-nel","max_age":604800}
-1 < Server: cloudflare
 1 < Transfer-Encoding: chunked
-1 < Vary: Accept-Encoding
+1 < Connection: keep-alive
+1 < x-powered-by: Express
 1 < access-control-allow-origin: *
-1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
 1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
 1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 5838
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tAVj2WHGdBoci9r30g2Nt%2F1CQKA9XBw7uWbE%2FbWy7PEFShOon3HKSHzpK4DriGXmZwkphhhdgLQRPz4krjE6SxDv2TQFn%2F2UBMW6FLEXLH5zeQx1BkR5Dya0MOk%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c5193423e2551a7-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+11:14:31.011 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+11:14:31.016 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+11:14:31.011 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : demo 
+11:14:31.023 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : demo 
+11:14:31.023 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : demo 
+11:14:31.058 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+11:14:31.058 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+11:14:31.082 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+11:14:31.082 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+11:14:31.101 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+11:14:31.114 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:14:31.342 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+11:14:31.342 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+11:14:31.342 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+11:14:31.341 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+11:14:31.342 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+11:14:31.364 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:14:31.373 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+11:14:31.373 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
+}
+ 
+11:14:31.376 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:14:31.387 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+11:14:31.399 [pool-1-thread-1] INFO  com.intuit.karate - [print] sample 2 
+11:14:33.740 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+11:14:33.854 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+11:14:33.932 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+11:14:34.076 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+11:14:34.118 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+11:14:34.152 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+11:55:20.929 [main] INFO  com.intuit.karate.Runner - karate.env is: 'demo'
+11:55:21.801 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:55:21.813 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640768121812
+11:55:21.829 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+11:55:22.936 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+11:55:22.943 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+11:55:23.058 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+11:55:23.061 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+11:55:23.429 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:55:23.806 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 366
+1 < 200
+1 < Date: Wed, 29 Dec 2021 08:55:23 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
 1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 990
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3aovQNWhXxYSWBC3yRNscOXyDCkiHLFWpxVepYX0es77Xy1TEqHd5ebKpx2adCMlqy2hZ%2F3j1ujhhJcmuJ2HCs2oMtoyasAlx6s7diYSXmrW%2BHDluDVgMNxn8rY%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c51cf2629e051a1-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+11:55:24.024 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+11:55:24.023 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+11:55:24.023 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : demo 
+11:55:24.023 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : demo 
+11:55:24.023 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : demo 
+11:55:24.069 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+11:55:24.070 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+11:55:24.095 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+11:55:24.095 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+11:55:24.295 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+11:55:24.321 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:55:24.412 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+11:55:24.412 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+11:55:24.412 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+11:55:24.412 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+11:55:24.440 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:55:24.443 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+11:55:24.443 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
+}
+ 
+11:55:24.445 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:55:24.456 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+11:55:24.456 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+11:55:24.463 [pool-1-thread-1] INFO  com.intuit.karate - [print] sample 2 
+11:55:26.541 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+11:55:26.677 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+11:55:26.781 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+11:55:26.921 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+11:55:26.965 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+11:55:27.050 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+11:58:50.421 [main] INFO  com.intuit.karate.Runner - karate.env is: 'demo'
+11:58:51.316 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:58:51.327 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640768331327
+11:58:51.343 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+11:58:52.465 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+11:58:52.473 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+11:58:52.583 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+11:58:52.585 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+11:58:52.930 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:58:53.250 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 310
+1 < 200
+1 < Date: Wed, 29 Dec 2021 08:58:53 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1200
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HtU428LWZAIrmQNXQjcXuLUBuaAyRuWKLX1ufExsZkFJK1TZ16CW5vsj0%2BT2EAxpXY%2BzAuEqrZpir5hoBG7DLKKTQKRiveWxaHGCvNdyrG9KXBpbweoTg0eI8hQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c51d4432d087243-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+11:58:53.508 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+11:58:53.508 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : demo 
+11:58:53.509 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : demo 
+11:58:53.508 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : demo 
+11:58:53.508 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+11:58:53.549 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+11:58:53.584 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+11:58:53.593 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+11:58:53.620 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+11:58:53.631 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+11:58:53.657 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:58:53.920 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+11:58:53.952 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+11:58:53.951 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+11:58:53.951 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+11:58:53.951 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+11:58:53.988 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+11:58:53.984 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:58:53.993 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
+}
+ 
+11:58:54.003 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:58:54.019 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+11:58:54.040 [pool-1-thread-1] INFO  com.intuit.karate - [print] sample 2 
+11:58:56.022 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+11:58:56.162 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+11:58:56.251 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+11:58:56.385 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+11:58:56.428 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+11:58:56.459 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+12:59:03.440 [main] INFO  com.intuit.karate.Runner - karate.env is: 'demo'
+12:59:04.334 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:59:04.345 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640771944345
+12:59:04.362 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+12:59:05.486 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+12:59:05.494 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+12:59:05.613 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+12:59:05.615 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+12:59:05.966 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:59:05.978 [pool-2-thread-1] ERROR com.intuit.karate - java.net.UnknownHostException: reqres.in: nodename nor servname provided, or not known, http call failed after 320 milliseconds for url: https://reqres.in/api/users/2
+12:59:05.978 [pool-2-thread-1] ERROR com.intuit.karate - classpath:features/callFeature/userDetail1.feature:9
+And method GET
+http call failed after 320 milliseconds for url: https://reqres.in/api/users/2
+classpath:features/callFeature/userDetail1.feature:9
+12:59:06.317 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+12:59:06.317 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : demo 
+12:59:06.317 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : demo 
+12:59:06.317 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : demo 
+12:59:06.317 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+12:59:06.354 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+12:59:06.355 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+12:59:06.382 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+12:59:06.382 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+12:59:06.412 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+12:59:06.418 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+12:59:06.450 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+12:59:06.451 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+12:59:06.451 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+12:59:06.453 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+12:59:06.453 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
+}
+ 
+12:59:06.453 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+12:59:06.454 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+12:59:06.485 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+12:59:06.485 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+12:59:06.496 [pool-1-thread-1] INFO  com.intuit.karate - [print] sample 2 
+12:59:06.496 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+12:59:09.089 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+12:59:09.344 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+12:59:09.461 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+12:59:09.632 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+12:59:09.674 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+12:59:09.710 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+13:00:06.902 [main] INFO  com.intuit.karate.Runner - karate.env is: 'demo'
+13:00:07.746 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:00:07.758 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640772007757
+13:00:07.774 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+13:00:08.892 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:08.897 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+13:00:09.003 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+13:00:09.006 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+13:00:09.366 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:00:09.748 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 372
+1 < 200
+1 < Date: Wed, 29 Dec 2021 10:00:09 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 4876
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FZUgk6l7lNDtNDGCgiOUX7icYnwQfIexEwp4%2Bj85tvhNIub6CsDUL5NJ%2FgmScn7myZLGadwNcQAQWDmulcTcffw8IABrPZI4qDj1DsYE0eHh3Ju9VP%2F7jKoSHFM%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c522e0589e25148-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+13:00:10.015 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:10.015 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:10.015 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:10.015 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:10.015 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:10.040 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+13:00:10.040 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+13:00:10.065 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+13:00:10.065 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+13:00:10.155 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+13:00:10.174 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+13:00:10.396 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:10.410 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+13:00:10.410 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+13:00:10.423 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+13:00:10.422 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+13:00:10.432 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+13:00:10.435 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+13:00:10.438 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
+}
+ 
+13:00:10.440 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+13:00:10.461 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:10.473 [pool-1-thread-2] INFO  com.intuit.karate - [print] sample 2 
+13:00:12.536 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+13:00:12.665 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+13:00:12.742 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+13:00:12.885 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+13:00:12.932 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+13:00:12.964 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+13:00:26.565 [main] INFO  com.intuit.karate.Runner - karate.env is: 'demo'
+13:00:27.450 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:00:27.462 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640772027461
+13:00:27.478 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+13:00:28.532 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:28.537 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+13:00:28.649 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+13:00:28.652 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+13:00:28.985 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:00:29.331 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 336
+1 < 200
+1 < Date: Wed, 29 Dec 2021 10:00:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 4896
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=w3dh2KYeLCyBsCuKLVA46E98jVVTSqxoTzujEbWNFAKWftvmFWfep%2FdMJKpZYoTWBdHpfrE53%2Fwon0%2FCZoNo2aqfjTzewKLpC0MrW9cs82%2FbVAF%2F1aFOHlmtx08%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c522e7fe8f77249-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+13:00:29.342 [pool-2-thread-1] ERROR com.intuit.karate - classpath:features/callFeature/userDetail1.feature:10
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 336, url: https://reqres.in/api/users/2, response: 
 {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
-
-11:07:36.335 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 6 of 22: classpath:features/callFeature/userDetail1.feature
-11:07:36.391 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Environment variable is : null 
-11:07:36.402 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-11:07:36.405 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 18 of 22: classpath:features/authentication/generateAccessToken.feature
-11:08:48.821 [main] INFO  com.intuit.karate - found scenario at line: 4 - ^using karate\-config$
-11:08:49.018 [main] INFO  com.intuit.karate - Environment variable is : null 
-11:08:49.024 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-11:08:49.127 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-11:08:49.129 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-11:08:49.136 [main] INFO  com.intuit.karate - [print] https://www.kloia.com/
-11:08:49.137 [main] INFO  com.intuit.karate - [print] busra
-11:08:49.141 [main] INFO  com.intuit.karate - [print] authInfo ---> {
-  "__arg": null,
-  "accessToken": "bla bla bla",
-  "__loop": -1,
-  "response": {
-    "access_token": "bla bla bla"
-  }
+classpath:features/callFeature/userDetail1.feature:10
+13:00:29.606 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:29.606 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:29.606 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:29.607 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:29.606 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:29.640 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+13:00:29.639 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+13:00:29.678 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+13:00:29.685 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+13:00:29.685 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+13:00:29.686 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
 }
-
-11:11:04.136 [main] INFO  com.intuit.karate - found scenario at line: 3 - ^using karate\-config$
-11:11:04.270 [main] INFO  com.intuit.karate - Environment variable is : null 
-11:11:04.272 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-11:11:04.352 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-11:11:04.357 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-11:11:04.377 [main] INFO  com.intuit.karate - [print] authInfo ---> {
-  "__arg": null,
-  "accessToken": "bla bla bla",
-  "__loop": -1,
-  "response": {
-    "access_token": "bla bla bla"
-  }
+ 
+13:00:30.085 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:30.132 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+13:00:30.132 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+13:00:30.132 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+13:00:30.133 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+13:00:30.133 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+13:00:30.142 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
 }
-
-11:12:45.772 [main] INFO  com.intuit.karate - found scenario at line: 3 - ^using karate\-config$
-11:12:45.900 [main] INFO  com.intuit.karate - Environment variable is : null 
-11:12:45.901 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-11:12:45.977 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-11:12:45.979 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-11:12:45.996 [main] INFO  com.intuit.karate - [print] authInfo ---> {
-  "__arg": null,
-  "accessToken": "bla bla bla",
-  "__loop": -1,
-  "response": {
-    "access_token": "bla bla bla"
-  }
+ 
+13:00:30.150 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
 }
-
-11:12:46.005 [main] INFO  com.intuit.karate - [print] accessToken ---> 
-11:13:25.010 [main] INFO  com.intuit.karate - found scenario at line: 3 - ^using karate\-config$
-11:13:25.150 [main] INFO  com.intuit.karate - Environment variable is : null 
-11:13:25.152 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-11:13:25.250 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-11:13:25.252 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-11:13:25.266 [main] INFO  com.intuit.karate - [print] authInfo ---> {
-  "__arg": null,
-  "accessToken": "bla bla bla",
-  "__loop": -1,
-  "response": {
-    "access_token": "bla bla bla"
-  }
+ 
+13:00:30.152 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
 }
+ 
+13:00:30.164 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+13:00:30.171 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 2 
+13:00:32.121 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+13:00:32.266 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+13:00:32.403 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+13:00:32.539 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+13:00:32.578 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+13:00:32.614 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+13:12:50.236 [main] INFO  com.intuit.karate.Runner - karate.env is: 'demo'
+13:12:51.119 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:12:51.132 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640772771131
+13:12:51.145 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+13:12:52.239 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+13:12:52.244 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+13:12:52.358 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+13:12:52.360 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+13:12:52.741 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
 
-11:13:25.277 [main] INFO  com.intuit.karate - [print] accessToken ---> bla bla bla
-11:17:23.953 [main] INFO  com.intuit.karate - found scenario at line: 3 - ^using karate\-config$
-11:17:24.096 [main] INFO  com.intuit.karate - Environment variable is : null 
-11:17:24.098 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-11:17:24.195 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-11:17:24.197 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-11:17:24.216 [main] INFO  com.intuit.karate - [print] authInfo ---> {
-  "__arg": null,
-  "accessToken": "bla bla bla",
-  "__loop": -1,
-  "response": {
-    "access_token": "bla bla bla"
-  }
+
+13:12:53.120 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 370
+1 < 200
+1 < Date: Wed, 29 Dec 2021 10:12:53 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 5640
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2dcv3aFSvDtAkXNz3mfi1Sz%2BUyMVUSrrZRK9iEPu4js0ubvtc5U0YCSqje5iUrD5mREoEdQ0teKswqYA%2FdHqYXeLuevJ%2B4t4WU4OKXRn1I7YwICgYm4Lnj8JtOI%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c5240a89a6b51a7-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+13:12:53.484 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+13:12:53.485 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : demo 
+13:12:53.483 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : demo 
+13:12:53.484 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : demo 
+13:12:53.484 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : demo 
+13:12:53.513 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+13:12:53.513 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+13:12:53.546 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+13:12:53.546 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+13:12:53.550 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+13:12:53.558 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
 }
-
-11:17:24.226 [main] INFO  com.intuit.karate - [print] accessToken ---> bla bla bla
-11:17:24.229 [main] INFO  com.intuit.karate - [print] auth ---> {
-  "accessToken": "bla bla bla"
+ 
+13:12:53.604 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+13:12:53.604 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+13:12:53.604 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+13:12:53.604 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+13:12:53.609 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
 }
-
-11:31:39.016 [main] INFO  com.intuit.karate - found scenario at line: 76 - ^call function two parameters$
-11:31:39.177 [main] INFO  com.intuit.karate - Environment variable is : null 
-11:31:39.179 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-11:31:39.259 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-11:31:39.261 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-11:31:39.290 [main] INFO  com.intuit.karate - [print] 3.0
-14:06:47.953 [main] INFO  com.intuit.karate - found scenario at line: 8 - ^call$
-14:06:51.638 [main] INFO  com.intuit.karate - Environment variable is : null 
-14:06:51.640 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-14:06:51.705 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-14:06:51.708 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-14:06:51.720 [main] INFO  com.intuit.karate - [print] second scenario
-14:06:51.729 [main] INFO  com.intuit.karate - scenario called at line: 4 by tag: @tag1
-14:06:51.735 [main] INFO  com.intuit.karate - [print] first scenario
-14:08:44.353 [main] INFO  com.intuit.karate - found scenario at line: 8 - ^call$
-14:08:49.909 [main] INFO  com.intuit.karate - Environment variable is : null 
-14:08:49.916 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-14:08:50.032 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-14:08:50.033 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-14:08:50.045 [main] INFO  com.intuit.karate - [print] second scenario
-14:08:50.054 [main] INFO  com.intuit.karate - scenario called at line: 4 by tag: @tag1
-14:08:50.059 [main] INFO  com.intuit.karate - [print] first scenario
-14:09:10.233 [main] INFO  com.intuit.karate - found scenario at line: 4 - ^call 1$
-14:09:10.799 [main] INFO  com.intuit.karate - Environment variable is : null 
-14:09:10.801 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-14:09:10.863 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-14:09:10.865 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-14:09:10.876 [main] INFO  com.intuit.karate - [print] first scenario
-14:10:39.976 [main] INFO  com.intuit.karate - found scenario at line: 8 - ^call$
-14:10:45.347 [main] INFO  com.intuit.karate - Environment variable is : null 
-14:10:45.349 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-14:10:45.409 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-14:10:45.411 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-14:10:45.425 [main] INFO  com.intuit.karate - [print] second scenario
-14:10:45.435 [main] INFO  com.intuit.karate - scenario called at line: 4 by tag: @tag1
-14:10:45.439 [main] INFO  com.intuit.karate - [print] first scenario
-14:12:44.151 [main] INFO  com.intuit.karate - found scenario at line: 8 - ^call$
-14:12:44.848 [main] INFO  com.intuit.karate - Environment variable is : null 
-14:12:44.849 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-14:12:44.913 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-14:12:44.915 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-14:12:44.927 [main] INFO  com.intuit.karate - [print] second scenario
-14:12:44.936 [main] INFO  com.intuit.karate - scenario called at line: 4 by tag: @tag1
-14:12:44.942 [main] INFO  com.intuit.karate - [print] first scenario
-14:13:24.898 [main] INFO  com.intuit.karate - found scenario at line: 8 - ^call 4$
-14:13:30.245 [main] INFO  com.intuit.karate - Environment variable is : null 
-14:13:30.247 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-14:13:30.307 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-14:13:30.309 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-14:13:30.319 [main] INFO  com.intuit.karate - [print] fouth scenario
-14:13:30.327 [main] INFO  com.intuit.karate - scenario called at line: 4 by tag: @tag1
-14:13:30.332 [main] INFO  com.intuit.karate - [print] first scenario
-19:52:12.123 [main] INFO  com.intuit.karate - found scenario at line: 3 - ^conditional logic$
-19:52:17.470 [main] INFO  com.intuit.karate - Environment variable is : null 
-19:52:17.472 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-19:52:17.538 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-19:52:17.541 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-19:52:17.555 [main] INFO  com.intuit.karate - [print] filename ---->  sample1.feature
-19:53:22.100 [main] INFO  com.intuit.karate - found scenario at line: 7 - ^conditional logic not equals$
-19:53:27.521 [main] INFO  com.intuit.karate - Environment variable is : null 
-19:53:27.523 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-19:53:27.611 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-19:53:27.613 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-19:53:27.632 [main] INFO  com.intuit.karate - [print] filename ---->  sample2.feature
-19:54:36.392 [main] INFO  com.intuit.karate - found scenario at line: 7 - ^conditional logic not equals$
-19:54:41.781 [main] INFO  com.intuit.karate - Environment variable is : null 
-19:54:41.783 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-19:54:41.844 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-19:54:41.846 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-19:54:41.858 [main] INFO  com.intuit.karate - [print] filename ---->  sample2.feature
-19:54:41.868 [main] INFO  com.intuit.karate - [print] https://www.kloia.com/
-19:54:41.869 [main] INFO  com.intuit.karate - [print] busra
-20:03:43.056 [main] INFO  com.intuit.karate - found scenario at line: 21 - ^conditional logic if condition$
-20:03:48.481 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:03:48.483 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:03:48.547 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:03:48.549 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:03:48.790 [main] DEBUG com.intuit.karate - request:
-1 > GET https://some-host.in/api/users/2/users/2
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: some-host.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
-
-20:03:48.892 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 102 milliseconds for URL: https://some-host.in/api/users/2/users/2
-20:03:48.893 [main] ERROR com.intuit.karate - http request failed: 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:03:48.893 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
-arg: null
-sample1.feature:8 - 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:04:20.672 [main] INFO  com.intuit.karate - found scenario at line: 13 - ^conditional logic response code$
-20:04:21.344 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:04:21.346 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:04:21.414 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:04:21.416 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:04:21.719 [main] DEBUG com.intuit.karate - request:
-1 > GET https://some-host.in/api/users/2/users/2
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: some-host.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
-
-20:04:21.736 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 16 milliseconds for URL: https://some-host.in/api/users/2/users/2
-20:04:21.736 [main] ERROR com.intuit.karate - http request failed: 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:04:21.737 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
-arg: null
-sample1.feature:8 - 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:04:46.659 [main] INFO  com.intuit.karate - found scenario at line: 13 - ^conditional logic response code$
-20:04:52.021 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:04:52.023 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:04:52.081 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:04:52.083 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:04:52.101 [main] INFO  com.intuit.karate - [print] result --->  {
+ 
+13:12:53.640 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
 }
-
-20:04:58.848 [main] INFO  com.intuit.karate - found scenario at line: 21 - ^conditional logic if condition$
-20:04:59.372 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:04:59.375 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:04:59.437 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:04:59.439 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:04:59.720 [main] DEBUG com.intuit.karate - request:
-1 > GET https://some-host.in/api/users/2/users/2
-1 > Accept-Encoding: gzip,deflate
+ 
+13:12:53.642 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+13:12:53.644 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : demo 
+13:12:53.644 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : demo 
+13:12:53.646 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+13:12:53.647 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+13:12:55.791 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+13:12:55.906 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+13:12:55.985 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+13:12:56.131 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+13:12:56.172 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+13:12:56.210 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+13:14:52.073 [main] INFO  com.intuit.karate.Runner - karate.env is: 'karate Lessons'
+13:14:52.960 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:14:52.971 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640772892970
+13:14:52.989 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+13:14:54.090 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:14:54.097 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+13:14:54.212 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+13:14:54.215 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+13:14:54.616 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
 1 > Connection: Keep-Alive
-1 > Host: some-host.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
-
-20:04:59.733 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 13 milliseconds for URL: https://some-host.in/api/users/2/users/2
-20:04:59.734 [main] ERROR com.intuit.karate - http request failed: 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:04:59.734 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
-arg: null
-sample1.feature:8 - 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:06:30.151 [main] INFO  com.intuit.karate - found scenario at line: 24 - ^conditional logic if condition$
-20:06:33.640 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:06:33.641 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:06:33.702 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:06:33.704 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:06:33.930 [main] DEBUG com.intuit.karate - request:
-1 > GET https://some-host.in/api/users/2/users/2
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
 1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: some-host.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
 
-20:06:33.942 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 12 milliseconds for URL: https://some-host.in/api/users/2/users/2
-20:06:33.943 [main] ERROR com.intuit.karate - http request failed: 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:06:33.943 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
-arg: null
-sample1.feature:8 - 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:07:45.652 [main] INFO  com.intuit.karate - found scenario at line: 24 - ^conditional logic if condition$
-20:07:51.047 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:07:51.049 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:07:51.109 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:07:51.111 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:07:51.344 [main] DEBUG com.intuit.karate - request:
-1 > GET https://some-host.in/api/users/2/users/2
+
+13:14:54.950 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 322
+1 < 200
+1 < Date: Wed, 29 Dec 2021 10:14:55 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 5762
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=YktcDf6NC87At5d72jg%2FE1JIpHS2CwKMgzvNpppe9AQzscDXW11fbqWGFRGXqwbk79%2FK6vw8N4idZk%2FaYuUAZm1aXLBl55sprRljH9BCPSA1vefTFBpTLaqGWlE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c5243a20814724c-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+13:14:55.330 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:14:55.331 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:14:55.331 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:14:55.349 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:14:55.409 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+13:14:55.410 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+13:14:55.445 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:14:55.452 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+13:14:55.452 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+13:14:55.489 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+13:14:55.510 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+13:14:55.722 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+13:14:55.722 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+13:14:55.725 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+13:14:55.725 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+13:14:55.745 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+13:14:55.753 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:14:55.752 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
+}
+ 
+13:14:55.758 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+13:14:55.766 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:14:55.775 [pool-1-thread-1] INFO  com.intuit.karate - [print] sample 2 
+13:14:55.775 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+13:14:58.242 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+13:14:58.357 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+13:14:58.437 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+13:14:58.569 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+13:14:58.619 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+13:14:58.646 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+13:16:53.847 [main] INFO  com.intuit.karate.Runner - karate.env is: 'karate Lessons'
+13:16:54.690 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:16:54.701 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640773014701
+13:16:54.720 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+13:16:55.778 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:16:55.785 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+13:16:55.893 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+13:16:55.897 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+13:16:56.265 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
 1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: some-host.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
 
-20:07:51.354 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 10 milliseconds for URL: https://some-host.in/api/users/2/users/2
-20:07:51.355 [main] ERROR com.intuit.karate - http request failed: 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:07:51.355 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
-arg: null
-sample1.feature:8 - 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:08:26.131 [main] INFO  com.intuit.karate - found scenario at line: 16 - ^conditional logic response code$
-20:08:26.665 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:08:26.667 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:08:26.795 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:08:26.797 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:08:27.087 [main] DEBUG com.intuit.karate - request:
-1 > GET https://some-host.in/api/users/2/users/2
+
+13:16:56.579 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 305
+1 < 200
+1 < Date: Wed, 29 Dec 2021 10:16:56 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 5883
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nbIUsZJzpK8vWMBPjRSJ5GjBIDFdtT0ERVjChTU2dO4EMuHduw7R8i35VcPnqivBApsv%2BVE8fP2YpLTZyE3vOh8o1HPummbn39NQOk9qjARUnacTJ31BWCRridw%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c52469a3e71724e-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+13:16:56.831 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:16:56.832 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:16:56.832 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:16:56.832 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:16:56.832 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:16:56.903 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+13:16:56.904 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+13:16:56.932 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+13:16:56.932 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+13:16:56.961 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+13:16:56.969 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+13:16:57.230 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+13:16:57.230 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+13:16:57.230 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+13:16:57.230 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+13:16:57.236 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:16:57.263 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+13:16:57.273 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
+}
+ 
+13:16:57.284 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+13:16:57.283 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+13:16:57.295 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+13:16:57.304 [pool-1-thread-2] INFO  com.intuit.karate - [print] sample 2 
+13:16:59.301 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+13:16:59.432 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+13:16:59.527 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+13:16:59.677 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+13:16:59.730 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+13:16:59.765 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+15:12:56.501 [main] INFO  com.intuit.karate.Runner - karate.env is: 'karate Lessons'
+15:12:57.381 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:12:57.392 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640779977391
+15:12:57.406 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+15:12:58.498 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+15:12:58.504 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+15:12:58.604 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+15:12:58.606 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+15:12:58.957 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
 1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: some-host.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
 
-20:08:27.104 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 16 milliseconds for URL: https://some-host.in/api/users/2/users/2
-20:08:27.104 [main] ERROR com.intuit.karate - http request failed: 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:08:27.104 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
-arg: null
-sample1.feature:8 - 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:11:45.497 [main] INFO  com.intuit.karate - found scenario at line: 24 - ^conditional logic if condition$
-20:11:50.968 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:11:50.970 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:11:51.031 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:11:51.032 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:11:51.256 [main] DEBUG com.intuit.karate - request:
-1 > GET https://some-host.in/api/users/2/users/2
+
+15:12:59.393 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 426
+1 < 200
+1 < Date: Wed, 29 Dec 2021 12:12:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 4566
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Qhg1BRpyilTHxfVo54pWZJlsY8N4uF1bSxoqPc81DpE187GzXhhK%2B9%2BtCot6ONQAi2yURVOBAgIXDySWJeN2MR8ekR%2F1Tqw8QM9v2CoTVj3hldDHy6bz7QeTH%2BI%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c52f097bbba5183-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+15:12:59.686 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+15:12:59.686 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+15:12:59.686 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+15:12:59.686 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+15:12:59.686 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+15:12:59.756 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+15:12:59.756 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+15:12:59.783 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+15:12:59.784 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+15:12:59.795 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+15:12:59.801 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+15:13:00.023 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+15:13:00.023 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+15:13:00.024 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+15:13:00.025 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+15:13:00.033 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+15:13:00.034 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+15:13:00.057 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
+}
+ 
+15:13:00.060 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+15:13:00.061 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+15:13:00.072 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+15:13:00.084 [pool-1-thread-1] INFO  com.intuit.karate - [print] sample 2 
+15:13:02.386 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+15:13:02.501 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+15:13:02.581 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+15:13:02.715 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+15:13:02.758 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+15:13:02.792 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+20:13:21.102 [main] INFO  com.intuit.karate.Runner - karate.env is: 'karate Lessons'
+20:13:22.023 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:13:22.036 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640798002036
+20:13:22.056 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+20:13:23.136 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:13:23.140 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:13:23.252 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+20:13:23.254 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:13:23.621 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
 1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: some-host.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
 
-20:11:51.267 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 11 milliseconds for URL: https://some-host.in/api/users/2/users/2
-20:11:51.267 [main] ERROR com.intuit.karate - http request failed: 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:11:51.268 [main] ERROR com.intuit.karate - feature call failed: sample1.feature
-arg: null
-sample1.feature:8 - 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:12:08.424 [main] INFO  com.intuit.karate - found scenario at line: 24 - ^conditional logic if condition$
-20:12:09.006 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:12:09.007 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:12:09.072 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:12:09.074 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:12:09.098 [main] INFO  com.intuit.karate - [print] https://www.kloia.com/
-20:12:09.098 [main] INFO  com.intuit.karate - [print] busra
-20:12:31.302 [main] INFO  com.intuit.karate - found scenario at line: 6 - ^basic get call$
-20:12:31.776 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:12:31.778 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:12:31.856 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:12:31.858 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:12:32.130 [main] DEBUG com.intuit.karate - request:
-1 > GET https://some-host.in/api/users/2/users/2
+
+20:13:23.973 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 340
+1 < 200
+1 < Date: Wed, 29 Dec 2021 17:13:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 3464
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cNMWnJn7pokJP2bhY88CsWpboIEUjvIG4%2Ftykb4wqF6I6bPVBtPAKw7W%2F%2FraeqwkYRIolsYaNySV6WCB%2B9I%2Fn4px7KGS95HAvx6RRmTmcit5bFfbMQndsLGsvyM%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c54a8a568c37222-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+20:13:24.204 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:13:24.204 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:13:24.204 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:13:24.204 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:13:24.204 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:13:24.279 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+20:13:24.279 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+20:13:24.333 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+20:13:24.334 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+20:13:24.369 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+20:13:24.377 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+20:13:24.616 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:13:24.650 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+20:13:24.651 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+20:13:24.657 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+20:13:24.657 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+20:13:24.663 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+20:13:24.665 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+20:13:24.671 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
+}
+ 
+20:13:24.674 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+20:13:24.695 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:13:24.703 [pool-1-thread-1] INFO  com.intuit.karate - [print] sample 2 
+20:13:26.932 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+20:13:27.070 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+20:13:27.151 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+20:13:27.295 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+20:13:27.339 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+20:13:27.375 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+20:15:06.639 [main] INFO  com.intuit.karate.Runner - karate.env is: 'karate Lessons'
+20:15:07.498 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:15:07.510 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640798107510
+20:15:07.528 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+20:15:08.595 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:15:08.603 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+20:15:08.702 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+20:15:08.705 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+20:15:09.077 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
 1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: some-host.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
 
-20:12:32.146 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 16 milliseconds for URL: https://some-host.in/api/users/2/users/2
-20:12:32.146 [main] ERROR com.intuit.karate - http request failed: 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:13:28.266 [main] INFO  com.intuit.karate - found scenario at line: 6 - ^basic get call$
-20:13:33.619 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:13:33.620 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:13:33.682 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:13:33.684 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:13:33.902 [main] DEBUG com.intuit.karate - request:
-1 > GET https://some-host.in/api/users/2
+
+20:15:09.396 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 308
+1 < 200
+1 < Date: Wed, 29 Dec 2021 17:15:09 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 3569
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BNFGtdKeSM7l3qQ8AI0aXhD386EkWnmGKUKc1Xt093Tc5bnpDME1WwhdhLZ3VNyLaFi7nnXOWYl2ayMnCQ4%2BP3Wr9bktEn2Q9gtZhaqS%2FF%2FgE7XysY07FSdVUh0%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c54ab3848205135-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+20:15:09.408 [pool-2-thread-1] ERROR com.intuit.karate - classpath:features/callFeature/userDetail1.feature:10
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 308, url: https://reqres.in/api/users/2, response: 
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+classpath:features/callFeature/userDetail1.feature:10
+20:15:09.697 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:15:09.697 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:15:09.697 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:15:09.699 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:15:09.697 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:15:09.781 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+20:15:09.781 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+20:15:09.821 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+20:15:09.822 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+20:15:10.073 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+20:15:10.101 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+20:15:10.188 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+20:15:10.188 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+20:15:10.188 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+20:15:10.188 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+20:15:10.216 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:15:10.216 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
+}
+ 
+20:15:10.217 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+20:15:10.216 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+20:15:10.217 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+20:15:10.227 [pool-1-thread-1] INFO  com.intuit.karate - [print] sample 2 
+20:15:10.227 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+20:15:12.218 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+20:15:12.353 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+20:15:12.455 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+20:15:12.605 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+20:15:12.649 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+20:15:12.739 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature
+11:23:18.839 [main] INFO  com.intuit.karate.Runner - karate.env is: 'karate Lessons'
+11:23:19.719 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:23:19.731 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1640852599731
+11:23:19.751 [main] DEBUG com.intuit.karate.Suite - waiting for 28 features to complete
+11:23:20.886 [pool-2-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+11:23:20.893 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
+11:23:21.021 [pool-2-thread-1] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla 
+11:23:21.024 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
+11:23:21.406 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
 1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: some-host.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
-
-20:13:33.916 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 13 milliseconds for URL: https://some-host.in/api/users/2
-20:13:33.916 [main] ERROR com.intuit.karate - http request failed: 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:14:24.892 [main] INFO  com.intuit.karate - found scenario at line: 7 - ^basic get call$
-20:14:25.433 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:14:25.435 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:14:25.501 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:14:25.503 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:14:25.778 [main] DEBUG com.intuit.karate - request:
-1 > GET https://some-host.in/api/users/2
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: some-host.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
-
-20:14:25.792 [main] ERROR com.intuit.karate - java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known, http call failed after 13 milliseconds for URL: https://some-host.in/api/users/2
-20:14:25.793 [main] ERROR com.intuit.karate - http request failed: 
-java.net.UnknownHostException: some-host.in: nodename nor servname provided, or not known
-20:15:24.899 [main] INFO  com.intuit.karate - found scenario at line: 6 - ^basic get call$
-20:15:25.370 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:15:25.372 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:15:25.450 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:15:25.452 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:15:25.715 [main] DEBUG com.intuit.karate - request:
-1 > GET https://regres.in/api/users/2
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: regres.in
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
-
-20:15:27.064 [main] DEBUG com.intuit.karate - response time in milliseconds: 1346.16
-1 < 403
-1 < Cache-Control: no-cache
-1 < Connection: close
-1 < Content-Type: text/html
-<html><body><h1>403 Forbidden</h1>
-Request forbidden by administrative rules.
-</body></html>
 
 
-
-20:15:27.102 [main] ERROR com.intuit.karate - status code was: 403, expected: 200, response time: 1346, url: https://regres.in/api/users/2, response: <html>
-<body>
-<h1>403 Forbidden</h1>
-Request forbidden by administrative rules.
-</body>
-</html>
-
-20:16:38.648 [main] INFO  com.intuit.karate - found scenario at line: 24 - ^conditional logic if condition$
-20:16:44.004 [main] INFO  com.intuit.karate - Environment variable is : null 
-20:16:44.006 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-20:16:44.065 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-20:16:44.067 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-20:16:44.092 [main] INFO  com.intuit.karate - [print] sample 2
-13:36:34.933 [main] INFO  com.intuit.karate - found scenario at line: 13 - ^conditional logic$
-13:36:35.632 [main] INFO  com.intuit.karate - Environment variable is : null 
-13:36:35.634 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-13:36:35.701 [main] INFO  com.intuit.karate - [print] accessToken --->  bla bla bla
-13:36:35.703 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-13:36:35.720 [main] INFO  com.intuit.karate - [print] filename ---->  sample1.feature
-13:36:35.737 [main] INFO  com.intuit.karate - [print] sample 1
-13:36:35.763 [main] INFO  com.intuit.karate - {featureDir=/Users/busra.ozdemir/Movies/karateFrameworkDetailLessons/src/test/resources/features/conditionalLogic, scenarioType=Scenario, featureFileName=conditionalLogic.feature, errorMessage=null, scenarioDescription=, scenarioName=conditional logic} 
+11:23:21.837 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 419
+1 < 200
+1 < Date: Thu, 30 Dec 2021 08:23:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 3292
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8%2BzqnzZ827y%2BOzB8wEgGeEI2VCUTOcz8Tw5xtAasVYT%2BDlTJg3i%2BlNIs8%2Bg5sOAHp4UXfltoRL4CTDq3XOn9DozvIQ7elg2N%2BIMC9rShQQJEAweKf5aXtYpYzgs%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6c59dd997f0b7216-IST
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+11:23:22.079 [pool-1-thread-4] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+11:23:22.079 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+11:23:22.079 [pool-1-thread-2] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+11:23:22.079 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+11:23:22.080 [pool-1-thread-3] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+11:23:22.106 [pool-1-thread-2] INFO  com.intuit.karate - [print] fouth scenario 
+11:23:22.106 [pool-1-thread-1] INFO  com.intuit.karate - [print] second scenario 
+11:23:22.118 [pool-1-thread-5] INFO  com.intuit.karate - [print] result ---> Hello 
+11:23:22.127 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+11:23:22.127 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - scenario called at line: 4 by tag: @tag1
+11:23:22.128 [pool-1-thread-5] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic function",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:23:22.154 [pool-1-thread-3] INFO  com.intuit.karate - [print] sample 1 
+11:23:22.154 [pool-1-thread-1] INFO  com.intuit.karate - [print] first scenario 
+11:23:22.155 [pool-1-thread-5] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+11:23:22.155 [pool-1-thread-4] INFO  com.intuit.karate - [print] sample 2 
+11:23:22.155 [pool-1-thread-2] INFO  com.intuit.karate - [print] first scenario 
+11:23:22.156 [pool-1-thread-3] INFO  com.intuit.karate - [print] result --->  {
+  "baseUrl": "https://www.kloia.com/",
+  "myVarName": "busra",
+  "auth": {
+    "accessToken": "bla bla bla"
+  },
+  "someUrl": "https://regres.in/api",
+  "authInfo": {
+    "accessToken": "bla bla bla",
+    "response": {
+      "access_token": "bla bla bla"
+    }
+  },
+  "responseCode": 404
+}
+ 
+11:23:22.157 [pool-1-thread-4] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic if condition",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:23:22.157 [pool-1-thread-3] INFO  com.intuit.karate - {
+  "errorMessage": null,
+  "featureDir": "/Users/busraozdemir/Documents/GitHub/karateApiFramework/karateFrameworkDetailLessons/target/test-classes/features/conditionalLogic",
+  "scenarioDescription": "",
+  "scenarioName": "conditional logic response code",
+  "featureFileName": "conditionalLogic.feature"
+}
+ 
+11:23:22.160 [pool-1-thread-5] INFO  com.intuit.karate - [print] sample 1 
+11:23:22.166 [pool-1-thread-1] INFO  com.intuit.karate - Environment variable is : karate Lessons 
+11:23:22.174 [pool-1-thread-1] INFO  com.intuit.karate - [print] sample 2 
+11:23:24.453 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 28 (6 remaining) classpath:features/callFeature/userDetail1.feature
+11:23:24.619 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 28 (4 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherScenario.feature
+11:23:24.716 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 28 (3 remaining) classpath:features/callscenarioorfeature/callscenarioFromAnotherfeatureScenario.feature
+11:23:24.853 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 28 (2 remaining) classpath:features/conditionalLogic/conditionalLogic.feature
+11:23:24.896 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 28 (1 remaining) classpath:features/conditionalLogic/sample1.feature
+11:23:24.997 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 28 (0 remaining) classpath:features/conditionalLogic/sample2.feature

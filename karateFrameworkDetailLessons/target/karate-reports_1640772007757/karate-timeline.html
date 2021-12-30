@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-2-thread-1","id":2},{"content":"pool-1-thread-2","id":3},{"content":"pool-1-thread-5","id":4},{"content":"pool-1-thread-3","id":5},{"content":"pool-1-thread-4","id":6}];
+var items = [{"id":1,"group":1,"content":"features\/callscenarioorfeature\/callscenarioFromAnotherScenario[2:8]","start":1640771946301,"end":1640771946452,"title":"features\/callscenarioorfeature\/callscenarioFromAnotherScenario[2:8] 12:59:06.301-12:59:06.452 call"},{"id":2,"group":2,"content":"features\/callFeature\/userDetail1[1:7]","start":1640771945409,"end":1640771945977,"title":"features\/callFeature\/userDetail1[1:7] 12:59:05.409-12:59:05.977 basic get call 2","className":"failed"},{"id":3,"group":1,"content":"features\/conditionalLogic\/sample2[1:4]","start":1640771946484,"end":1640771946496,"title":"features\/conditionalLogic\/sample2[1:4] 12:59:06.484-12:59:06.496 using karate-config"},{"id":4,"group":3,"content":"features\/callscenarioorfeature\/callscenarioFromAnotherfeatureScenario[2:8]","start":1640771946301,"end":1640771946456,"title":"features\/callscenarioorfeature\/callscenarioFromAnotherfeatureScenario[2:8] 12:59:06.301-12:59:06.456 call 4"},{"id":5,"group":4,"content":"features\/conditionalLogic\/sample1[1:3]","start":1640771946484,"end":1640771946496,"title":"features\/conditionalLogic\/sample1[1:3] 12:59:06.484-12:59:06.496 basic get call"},{"id":6,"group":5,"content":"features\/conditionalLogic\/conditionalLogic[3:25]","start":1640771946301,"end":1640771946452,"title":"features\/conditionalLogic\/conditionalLogic[3:25] 12:59:06.301-12:59:06.452 conditional logic response code"},{"id":7,"group":6,"content":"features\/conditionalLogic\/conditionalLogic[4:33]","start":1640771946302,"end":1640771946452,"title":"features\/conditionalLogic\/conditionalLogic[4:33] 12:59:06.302-12:59:06.452 conditional logic if condition"},{"id":8,"group":4,"content":"features\/conditionalLogic\/conditionalLogic[5:38]","start":1640771946301,"end":1640771946412,"title":"features\/conditionalLogic\/conditionalLogic[5:38] 12:59:06.301-12:59:06.412 conditional logic function"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,6 +1,0 @@
-13:36:34.939 found scenario at line: 13 - ^conditional logic$
-13:36:35.632 Environment variable is : null 
-13:36:35.634 >> lock acquired, begin callSingle: classpath:features/authentication/generateAccessToken.feature
-13:36:35.704 << lock released, cached callSingle: classpath:features/authentication/generateAccessToken.feature
-13:36:35.720 [print] filename ---->  sample1.feature
-13:36:35.763 {featureDir=/Users/busra.ozdemir/Movies/karateFrameworkDetailLessons/src/test/resources/features/conditionalLogic, scenarioType=Scenario, featureFileName=conditionalLogic.feature, errorMessage=null, scenarioDescription=, scenarioName=conditional logic} 
